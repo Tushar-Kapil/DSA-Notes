@@ -33,11 +33,13 @@ public class CustomArrayList<T> {
         return size == data.length;
     }
 
+    @SuppressWarnings("unchecked")
     public T get(int index) {
         return (T) (data[index]);
     }
 
     public T remove() {
+        @SuppressWarnings("unchecked")
         T removed = (T) (data[--size]);
 
         return removed;

@@ -2,6 +2,7 @@ package DynamicProgramming;
 
 public class SubsetSumToK {
     public static boolean subsetSumToK(int n, int k, int arr[]) {
+        // https://www.codingninjas.com/studio/problems/subset-sum-equal-to-k_1550954?leftPanelTab=0
         // 1. express in (index, target)
         // 2. Do stuff ie take | not take
         // 3. check target in array
@@ -37,6 +38,7 @@ public class SubsetSumToK {
     }
 
     public static boolean solve(int i, int target, int[] arr, int[][] dp) {
+        // [1,2,3,4] k = 4;
         if (target == 0)
             return true;
 

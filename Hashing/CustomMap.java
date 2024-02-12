@@ -105,6 +105,7 @@ public class CustomMap<K, V> {
         }
     }
 
+    @SuppressWarnings("hiding")
     private class MapNode<K, V> {
         K key;
         V value;
