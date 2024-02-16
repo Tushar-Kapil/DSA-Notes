@@ -1,4 +1,4 @@
-package DynamicProgramming;
+package DynamicProgramming.Subseq;
 
 public class SubsetSumToK {
     public static boolean subsetSumToK(int n, int k, int arr[]) {

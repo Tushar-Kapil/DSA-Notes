@@ -1,4 +1,4 @@
-package DynamicProgramming;
+package DynamicProgramming.TwoD;
 
 import java.util.List;
 

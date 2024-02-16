@@ -6,6 +6,7 @@ import java.util.Queue;
 
 class Bfs {
     public ArrayList<Integer> bfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj) {
+        // [[1, 2, 3], [], [4], []]
         ArrayList<Integer> bfs = new ArrayList<Integer>();
         Queue<Integer> q = new LinkedList<>();
 

@@ -1,4 +1,4 @@
-package DynamicProgramming;
+package DynamicProgramming.OneD;
 
 import java.util.Arrays;
 
@@ -47,12 +47,15 @@ public class Fib {
 
     public static void main(String[] args) {
         // DP
-        // Two Ways
-        // 1. Tabulation Method -> Bottom Up DP
-        // 2. Memoization -> Top Down DP
+        // 1. Recursion -> Write Reccurence
+        // Steps:- 1. Express in Index, (Changing parameter) and base case 2. Perfom all
+        // task 3.
+        // Return requirement
+        // 2. Memozation -> Top Down DP
+        // 3. Tabulation Method -> Bottom Up DP
 
         // Simple
-        System.out.println(fibo(6));
+        System.out.println(fibo(4));
 
         // 0 1 1 2 3 5
         // Memoize sub problems (1d Array)

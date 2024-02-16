@@ -1,4 +1,4 @@
-package DynamicProgramming;
+package DynamicProgramming.Subseq;
 
 class CountSubsetsK {
     public static int findWays(int num[], int k) {
