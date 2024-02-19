@@ -1,7 +1,5 @@
 package DynamicProgramming.TwoD;
 
-import java.util.*;
-
 public class NinjasTraining {
     public static int ninjaTraining(int n, int points[][]) {
         int[][] dp = new int[n][4];
