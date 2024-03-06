@@ -26,12 +26,12 @@ public class CustomStack {
 
     public int pop() {
         if (isEmpty()) {
-            System.out.println("Stack is already Empty");
+            System.out.println("Empty");
             return 1;
         }
-        int poped = data[top];
+        int popped = data[top];
         top--;
-        return poped;
+        return popped;
     }
 
     public int peek() {
