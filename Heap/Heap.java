@@ -16,7 +16,6 @@ public class Heap {
 
     public void insert(int val) {
         size++;
-
         int index = size;
         arr[index] = val;
 
@@ -73,7 +72,6 @@ public class Heap {
     }
 
     public void heapify(int arr[], int i, int n) {
-
         int largest = i;
         int leftChild = 2 * i + 1;
         int rightChild = 2 * i + 2;
@@ -117,12 +115,14 @@ public class Heap {
 
     public static void main(String[] args) {
         Heap h = new Heap(10);
-        h.insert(10);
-        h.insert(40);
-        h.insert(35);
-        h.insert(32);
+        h.insert(50);
+        h.insert(55);
+        h.insert(53);
+        h.insert(52);
+        h.insert(54);
+        h.display();
         h.delete();
-        // h.display();
+        h.display();
 
         int[] arr = { 54, 53, 55, 52, 50 };
         h.buildHeap(arr);

@@ -27,7 +27,7 @@ public class CustomStack {
     public int pop() {
         if (isEmpty()) {
             System.out.println("Empty");
-            return 1;
+            return -1;
         }
         int popped = data[top];
         top--;
@@ -37,7 +37,7 @@ public class CustomStack {
     public int peek() {
         if (isEmpty()) {
             System.out.println("Stack is  Empty");
-            return 1;
+            return -1;
         }
         return data[top];
     }
@@ -56,6 +56,7 @@ public class CustomStack {
         stack.push(1);
         stack.push(2);
         stack.push(5);
+        stack.push(10);
         stack.push(10);
 
         System.out.println(stack.pop());

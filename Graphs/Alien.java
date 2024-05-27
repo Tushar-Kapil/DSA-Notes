@@ -24,7 +24,6 @@ class Alien {
                 q.add(i);
             }
         }
-
         List<Integer> topo = new ArrayList<>();
 
         while (!q.isEmpty()) {
@@ -35,6 +34,7 @@ class Alien {
             for (Integer it : adj.get(node)) {
                 ind[it]--;
                 if (ind[it] == 0) {
+                    q.add(it);
                     q.add(it);
                 }
             }

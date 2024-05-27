@@ -4,15 +4,14 @@ import java.util.ArrayList;
 
 public class Dfs {
 
-    public ArrayList<Integer> dfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj) {
+    public static ArrayList<Integer> dfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj) {
         boolean[] vis = new boolean[V + 1];
-        vis[0] = true;
         ArrayList<Integer> ls = new ArrayList<>();
         dfs(0, adj, ls, vis);
         return ls;
     }
 
-    public void dfs(int node, ArrayList<ArrayList<Integer>> adj, ArrayList<Integer> ls, boolean[] vis) {
+    public static void dfs(int node, ArrayList<ArrayList<Integer>> adj, ArrayList<Integer> ls, boolean[] vis) {
         vis[node] = true;
         ls.add(node);
 
@@ -21,5 +20,10 @@ public class Dfs {
                 dfs(it, adj, ls, vis);
             }
         }
+    }
+
+    public static void main(String[] args) {
+        ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
+
     }
 }

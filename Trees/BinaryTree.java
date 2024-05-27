@@ -1,5 +1,6 @@
 package Trees;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
@@ -48,19 +49,6 @@ public class BinaryTree {
             node.right = new Node(value);
             populate(sc, node.right);
         }
-    }
-
-    public void display() {
-        display(root);
-    }
-
-    private void display(Node node) {
-        if (node == null) {
-            return;
-        }
-        System.out.println(node.value);
-        display(node.left);
-        display(node.right);
     }
 
     public void inOrder() {
@@ -134,6 +122,36 @@ public class BinaryTree {
             }
 
         }
+    }
+
+    public ArrayList<Integer> morris(Node root) {
+        ArrayList<Integer> inorder = new ArrayList<>();
+
+        Node curr = root;
+
+        while (curr != null) {
+            if (curr.left == null) {
+                inorder.add(curr.value);
+                curr = curr.right;
+            } else {
+                Node prev = curr.left;
+
+                while (prev.right != null && prev.right != curr) {
+                    prev = prev.right;
+                }
+
+                if (prev.right == null) {
+                    prev.right = curr;
+                    curr = curr.left;
+                } else {
+                    prev.right = null;
+                    inorder.add(curr.value);
+                    curr = curr.right;
+                }
+            }
+        }
+
+        return inorder;
     }
 
     public static void main(String[] args) {

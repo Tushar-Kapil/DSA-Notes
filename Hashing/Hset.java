@@ -1,13 +1,16 @@
 package Hashing;
 
+import java.util.HashMap;
 import java.util.HashSet;
 
 import java.util.Iterator;
+import java.util.Map;
 
 public class Hset {
 
     public static void main(String[] args) {
         HashSet<String> set = new HashSet<>();
+        Map<String, Integer> cnt = new HashMap<>();
 
         // TreeSet --> natural order (slower than hashset)
         // LinkedHashSet --> maintains order (faster than TreeSet)

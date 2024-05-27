@@ -15,14 +15,17 @@ public class AdjList {
             adjlist.add(new ArrayList<>());
         }
 
+        // [[], [2], [1], []]
         // 1--2
         adjlist.get(1).add(2);
         adjlist.get(2).add(1);
 
+        // [[], [2], [1, 3], [2]]
         // 2--3
         adjlist.get(2).add(3);
         adjlist.get(3).add(2);
 
+        // [[], [2,3], [1, 3], [2, 1]]
         // 1--3
         adjlist.get(1).add(3);
         adjlist.get(3).add(1);
